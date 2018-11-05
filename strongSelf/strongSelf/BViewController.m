@@ -18,15 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+    self.title = @"BViewController";
     __weak typeof(self) _self = self;
     [[BigImageDownloader shareDownloader] requestBigImageWithUrl:@"BigImg" completion:^(UIImage * _Nonnull image) {
         //在此之前如果点击了dissmiss按钮 BViewController将j会被释放， self = nil;
         __strong typeof(_self) self = _self;
-        NSLog(@"BViewController self = %@", self);
         
         //创建一个UIImageView显示, 并添加水平居中约束
         UIImageView *bigImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 80, 200, 200)];
@@ -53,7 +49,7 @@
     }];
 }
 
-- (IBAction)clickDissmiss:(id)sender {
+- (IBAction)clickDismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

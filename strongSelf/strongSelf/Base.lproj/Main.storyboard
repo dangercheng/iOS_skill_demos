@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,10 +47,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6H-FU-peg">
-                                <rect key="frame" x="157" y="333" width="61" height="30"/>
-                                <state key="normal" title="Dissmiss"/>
+                                <rect key="frame" x="160.5" y="333" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
                                 <connections>
-                                    <action selector="clickDissmiss:" destination="zWb-BL-CZ5" eventType="touchUpInside" id="KiD-KW-RYp"/>
+                                    <action selector="clickDismiss:" destination="zWb-BL-CZ5" eventType="touchUpInside" id="NH3-Dt-zdg"/>
                                 </connections>
                             </button>
                         </subviews>
